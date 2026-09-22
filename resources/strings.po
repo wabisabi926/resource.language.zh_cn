@@ -1017,6 +1017,7 @@ msgid "Vertical shift"
 msgstr "纵向偏移"
 
 #empty string with id 226
+
 #: system/settings/settings.xml
 msgctxt "#227"
 msgid "Load audio CD information from online service"
@@ -2744,7 +2745,7 @@ msgstr "单首"
 
 #. Label used for buttons and select options as a reference to match all items or occurrences.
 #: xbmc/dialogs/GUIDialogMediaFilter.cpp xbmc/filesystem/AddonsDirectory.cpp
-#: xbmc/PlayListPlayer.cpp xbmc/profiles/dialogs/GUIDialogLockSettings.cpp
+#: xbmc/playListPlayer.cpp xbmc/profiles/dialogs/GUIDialogLockSettings.cpp
 #: xbmc/pvr/guilib/PVRGUIActionsDatabase.cpp
 #: xbmc/pvr/guilib/PVRGUIActionsTimers.cpp
 #: xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
@@ -2769,6 +2770,7 @@ msgid "Repeat: All"
 msgstr "重复：全部"
 
 #empty strings from id 598 to 599
+
 msgctxt "#600"
 msgid "Rip audio CD"
 msgstr "抓取音乐 CD"
@@ -2797,6 +2799,7 @@ msgid "Ripping..."
 msgstr "抓取中..."
 
 #empty string with id 606
+
 msgctxt "#607"
 msgid "To:"
 msgstr "储存到："
@@ -2806,6 +2809,7 @@ msgid "Couldn't rip CD or track because CDDARipPath is not set."
 msgstr "无法抓取 CD 或音轨，因 CDDA 抓取路径未设置。"
 
 #empty string with id 609
+
 msgctxt "#610"
 msgid "Rip audio track"
 msgstr "抓取音轨"
@@ -2830,6 +2834,7 @@ msgid "Virtual folder"
 msgstr "虚拟文件夹"
 
 #empty strings from id 615 to 619
+
 #: system/settings/settings.xml
 msgctxt "#620"
 msgid "Audio CDs"
@@ -2931,13 +2936,13 @@ msgstr "使用专辑增益等级"
 
 #: system/settings/settings.xml
 msgctxt "#641"
-msgid "Files with ReplayGain information"
-msgstr "文件有回放增益信息"
+msgid "Preamp for files with ReplayGain information"
+msgstr "对包含 ReplayGain 信息的文件进行前置放大"
 
 #: system/settings/settings.xml
 msgctxt "#642"
-msgid "Files without ReplayGain information"
-msgstr "文件无回放增益信息"
+msgid "Preamp for files without ReplayGain information"
+msgstr "对不包含 ReplayGain 信息的文件进行前置放大"
 
 #: system/settings/settings.xml
 msgctxt "#643"
@@ -24349,7 +24354,19 @@ msgctxt "#39210"
 msgid "If enabled, Dolby Vision files will have level 5 (active area) metadata overridden to zero offsets. Enable if your display has issues with incorrectly cropped image in Dolby Vision playback."
 msgstr "启用后，杜比视界文件的 level 5 (有效显示区域)元数据将被强制覆盖为零偏移。如果您的显示器在播放杜比视界内容时出现图像裁剪错误问题，请启用此选项。"
 
-#empty strings from id 39211 to 39899
+#. Title of the setting that skips subtitles whose language matches the audio language
+#: system/settings/settings.xml
+msgctxt "#39211"
+msgid "Don't show subtitles matching the audio language"
+msgstr "不显示与音频语言一致的字幕"
+
+#. Help text for setting "Don't show subtitles matching the audio language" of label #39211
+#: system/settings/settings.xml
+msgctxt "#39212"
+msgid "Do not turn on subtitles that are in the same language as the audio being played. Forced subtitles are not affected."
+msgstr "不会自动开启和播放音频语言相同的字幕。强制字幕不受此选项影响。"
+
+#empty strings from id 39213 to 39899
 
 #. List formatting: pattern used to join a list of exactly two items, e.g. "A and B"
 #. STR_LIST_AND_TWO
@@ -24533,7 +24550,7 @@ msgstr "无法删除电影的默认版本。设置不同的默认版本后再试
 #. Remove video version dialog text
 #: xbmc/video/dialogs/GUIDialogVideoManager.cpp
 msgctxt "#40020"
-msgid "Are you sure to remove version \"{0:s}\"?"
+msgid "Are you sure to remove version \"{0:s}\" from the library?"
 msgstr "您确定要从媒体库中移除版本\"{0:s}\"吗？"
 
 #. Remove item from library text if item has multiple versions
@@ -24669,7 +24686,31 @@ msgctxt "#40042"
 msgid "Found a different version of the movie \"{0:s}\" in playlist {1:s} of {2:s} - length {3:s}. Would you like to convert it into an additional version of the original?"
 msgstr "在播放列表 {1:s}/{2:s} 中发现电影 \"{0:s}\" 的不同版本 - 时长 {3:s}。是否要将其转换为原始电影的附加版本？"
 
-#empty strings with id 40043 to 40201
+#. Ungroup video version dialog title
+#: xbmc/video/dialogs/GUIDialogVideoManagerVersions.cpp
+msgctxt "#40043"
+msgid "Ungroup video version"
+msgstr "取消视频版本分组"
+
+#. Manage versions, ungroup: ungrouping the default version of a movie is not allowed.
+#: xbmc/video/dialogs/GUIDialogVideoManagerVersions.cpp
+msgctxt "#40044"
+msgid "The default version of a movie cannot be ungrouped. Set a different default version and try again."
+msgstr "电影默认版本无法取消分组。请设置其他默认版本后重试。"
+
+#. Ungroup video version dialog text
+#: xbmc/video/dialogs/GUIDialogVideoManagerVersions.cpp
+msgctxt "#40045"
+msgid "Are you sure to ungroup version \"{0:s}\"?[CR]It will be turned into a library movie entry."
+msgstr "确定要取消版本\"{0:s}\"的分组吗？[CR]该版本将转为媒体库中的电影条目。"
+
+#. Button name for video version ungroup function of the manage versions dialog
+#: xbmc/video/dialogs/GUIDialogVideoManagerVersions.cpp
+msgctxt "#40046"
+msgid "Ungroup"
+msgstr "取消分组"
+
+#empty strings with id 40047 to 40201
 
 #. Ignore different video versions settting
 #: system/settings/settings.xml
