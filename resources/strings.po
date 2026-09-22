@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-08-23 10:25+0000\n"
+"PO-Revision-Date: 2026-09-16 14:56+0000\n"
 "Last-Translator: wabisabi926 <wabisabi926@foxmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://kodi.weblate.cloud/projects/kodi-core/kodi-main/zh_Hans/>\n"
 "Language: zh_cn\n"
@@ -19048,14 +19048,123 @@ msgctxt "#35280"
 msgid "Select disc"
 msgstr "选择光盘"
 
-#empty strings from id 35281 to 35297
+#. Heading of the notification shown when the player earns an achievement
+#: xbmc/games/addons/cheevos/GameClientCheevos.cpp
+msgctxt "#35281"
+msgid "Achievement Unlocked"
+msgstr "成就已解锁"
+
+#. Heading of the notification shown when every achievement of a game has been earned in hardcore mode
+#: xbmc/games/addons/cheevos/GameClientCheevos.cpp
+msgctxt "#35282"
+msgid "Game mastered"
+msgstr "游戏已精通"
+
+#. Heading of the notification shown when every achievement of a game has been earned
+#: xbmc/games/addons/cheevos/GameClientCheevos.cpp
+msgctxt "#35283"
+msgid "Game completed"
+msgstr "游戏已完成"
+
+#. Notification shown when a game with achievement support is loaded. {0:d} is the number earned, {1:d} the total
+#: xbmc/games/addons/cheevos/GameClientCheevos.cpp
+msgctxt "#35284"
+msgid "{0:d} of {1:d} achievements unlocked"
+msgstr "已解锁 {0:d} 个成就，共 {1:d} 个"
+
+#. Message shown when the achievements dialog is opened without being logged in to RetroAchievements
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35285"
+msgid "Log in to RetroAchievements in Settings to use this feature."
+msgstr "请在设置中登录 RetroAchievements 以使用此功能。"
+
+#. Message shown when the achievements dialog is opened for a game that RetroAchievements has no achievement set for
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35286"
+msgid "This game doesn't support RetroAchievements"
+msgstr "此游戏不支持 RetroAchievements"
+
+#. Label for the button that opens the achievements dialog, and heading of that dialog
+#: addons/skin.estuary/xml/GameOSD.xml
+#: addons/skin.estuary/xml/Includes_Games.xml
+msgctxt "#35287"
+msgid "Achievements"
+msgstr "成就"
+
+#. Progress through a game's achievements, weighted by point value. {0:d} is a percentage
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35288"
+msgid "{0:d}% complete"
+msgstr "已完成 {0:d}%"
+
+#. Date an achievement was earned. {0:s} is a localised date
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35289"
+msgid "Unlocked {0:s}"
+msgstr "解锁于 {0:s}"
+
+#. Rarity category of an achievement earned by more than half of players
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35290"
+msgid "Common"
+msgstr "常见"
+
+#. Rarity category of an achievement earned by 10% to 50% of players
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35291"
+msgid "Uncommon"
+msgstr "较少见"
+
+#. Rarity category of an achievement earned by 2% to 10% of players
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35292"
+msgid "Rare"
+msgstr "稀有"
+
+#. Rarity category of an achievement earned by fewer than 2% of players
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35293"
+msgid "Ultra rare"
+msgstr "极稀有"
+
+#. Point value of an achievement, abbreviated to fit the list. {0:d} is the number of points
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35294"
+msgid "{0:d} pts"
+msgstr "{0:d} 分"
+
+#. Notification shown after signing in to RetroAchievements. {0:s} is the account name
+#: xbmc/games/GameSettings.cpp
+#: xbmc/games/addons/cheevos/GameClientCheevos.cpp
+msgctxt "#35295"
+msgid "Logged in as {0:s}"
+msgstr "已以 {0:s} 身份登录"
+
+#. Notification shown when RetroAchievements becomes unreachable during play
+#: xbmc/games/addons/cheevos/GameClientCheevos.cpp
+msgctxt "#35296"
+msgid "Unlocks will be submitted when the connection returns."
+msgstr "连接恢复后将提交待处理的解锁。"
+
+#. Notification shown when RetroAchievements becomes reachable again
+#: xbmc/games/addons/cheevos/GameClientCheevos.cpp
+msgctxt "#35297"
+msgid "Pending unlocks have been submitted."
+msgstr "待处理的解锁已提交。"
+
 #. Error message shown when trying to load a compressed savestate in an unsupported version of Kodi
 #: xbmc/games/dialogs/osd/DialogInGameSaves.cpp
 msgctxt "#35298"
 msgid "This savestate is compressed and can't be loaded by this version of Kodi."
 msgstr "此存档已压缩，无法由当前版本的 Kodi 加载。"
 
-#empty strings from id 35299 to 35504
+#. Shown when the achievements dialog is opened before the game has been identified
+#: xbmc/games/dialogs/osd/DialogGameAchievements.cpp
+msgctxt "#35299"
+msgid "Still looking this game up on RetroAchievements..."
+msgstr "仍在 RetroAchievements 上查找此游戏…"
+
+#empty strings from id 35300 to 35504
 
 #. connection state "host unreachable"
 #: xbmc/pvr/addons/PVRClients.cpp
@@ -24425,7 +24534,7 @@ msgstr "无法删除电影的默认版本。设置不同的默认版本后再试
 #: xbmc/video/dialogs/GUIDialogVideoManager.cpp
 msgctxt "#40020"
 msgid "Are you sure to remove version \"{0:s}\"?"
-msgstr "您确定要删除版本\"{0:s}\"吗？"
+msgstr "您确定要从媒体库中移除版本\"{0:s}\"吗？"
 
 #. Remove item from library text if item has multiple versions
 #: xbmc/video/windows/GUIWindowVideoNav.cpp
@@ -24883,3 +24992,8 @@ msgstr "如果启用，删除文件时将显示确认对话框。如果禁用，
 msgctxt "#40803"
 msgid "Monitor change may require restart."
 msgstr "更改显示器可能需要重启。"
+# Value formatting for ReplayGain Preamp settings
+#: system/settings/settings.xml
+msgctxt "#40804"
+msgid "{0:.1f} dB"
+msgstr "{0:.1f} 分贝"
