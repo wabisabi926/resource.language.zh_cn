@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: KODI Main\n"
 "Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-09-16 14:56+0000\n"
+"PO-Revision-Date: 2026-10-03 20:45+0000\n"
 "Last-Translator: wabisabi926 <wabisabi926@foxmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://kodi.weblate.cloud/projects/kodi-core/kodi-main/zh_Hans/>\n"
 "Language: zh_cn\n"
@@ -7398,7 +7398,7 @@ msgctxt "#13455"
 msgid "Use VP9 VAAPI"
 msgstr "使用 VP9 VAAPI"
 
-#. Description of setting with label #13453 "Use VP9 VAAPI"
+#. Description of setting with label #13455 "Use VP9 VAAPI"
 #: system/settings/settings.xml
 msgctxt "#13456"
 msgid "Enable this option to use hardware acceleration for the VP9 codec. If disabled the CPU will be used instead."
@@ -8318,15 +8318,15 @@ msgstr "允许 3:2 下拉刷新率"
 
 #: system/settings/settings.xml
 msgctxt "#14128"
-msgid "Allow whole-number frame repeat"
-msgstr "允许整数帧重复"
-
-#: system/settings/settings.xml
-msgctxt "#14129"
 msgid "Allow double refresh rates"
 msgstr "允许双倍刷新率"
 
-#empty strings from id 14129 to 14186
+#: system/settings/settings.xml
+msgctxt "#14129"
+msgid "Allow whole-number frame repeat"
+msgstr "允许整数帧重复"
+
+#empty strings from id 14130 to 14186
 
 #: system/settings/settings.xml
 msgctxt "#14187"
@@ -8835,6 +8835,47 @@ msgctxt "#14427"
 msgid "Player-Led"
 msgstr "播放器主导模式"
 
+#: system/settings/settings.xml
+msgctxt "#14428"
+msgid "Dither Dolby Vision FEL output"
+msgstr "杜比视界 FEL 输出抖动"
+
+#: system/settings/settings.xml
+msgctxt "#14429"
+msgid "Quantize the composed Dolby Vision profile 7 FEL picture to the 10-bit video output with a fine blue noise dither instead of rounding, which keeps smooth gradients free of banding. S928X only."
+msgstr "对合成后的杜比视界 Profile 7 FEL 画面采用精细蓝噪声抖动量化至 10-bit 视频输出，而非直接取整，可保证平滑渐变无色彩条带。仅 S928X 芯片可用。"
+
+#: system/settings/settings.xml
+msgctxt "#14430"
+msgid "Dolby Vision FEL demo mode"
+msgstr "杜比视界 FEL 演示模式"
+
+#: system/settings/settings.xml
+msgctxt "#14431"
+msgid "Split screen comparison for profile 7 FEL titles: the left half is shown with the full FEL composition (RPU mapping and enhancement layer), the right half as without it (the base layer, as shown after the usual conversion to profile 8.1). S928X only."
+msgstr "Profile 7 FEL 影片分屏对比：左半屏启用完整 FEL 合成（RPU 映射+增强层），右半屏不启用（仅基础层，等同于常规转码为 Profile 8.1 的效果）。仅 S928X 芯片可用。"
+
+#: system/settings/settings.xml
+msgctxt "#14432"
+msgid "Dolby Vision FEL composition"
+msgstr "杜比视界 FEL 合成"
+
+#: system/settings/settings.xml
+msgctxt "#14433"
+msgid "Compose the full enhancement layer of Dolby Vision profile 7 FEL titles on the GPU. When disabled, FEL titles play like MEL ones: converted to profile 8.1 without the enhancement layer. Takes effect when playback starts. S928X only."
+msgstr "在 GPU 上合成杜比视界 Profile 7 FEL 影片的完整增强层。关闭此选项时，FEL 影片将以 MEL 模式播放：转码为 Profile 8.1，不加载增强层。播放开始后生效。仅 S928X 芯片可用。"
+
+#. label of the setting to decode 3D MVC video in software
+#: system/settings/settings.xml
+msgctxt "#14438"
+msgid "Decode 3D MVC in software"
+msgstr "软件解码 3D MVC"
+
+#. help text of setting with label #14438
+#: system/settings/settings.xml
+msgctxt "#14439"
+msgid "Decode 3D Blu-ray (MVC) video on the CPU instead of the hardware decoder, which corrupts the second view of some titles. Both views keep their full resolution. Needs the mvcout kernel module. Takes effect when playback starts. S928X always decodes 3D MVC in software."
+msgstr "由 CPU 而非硬件解码器解码 3D 蓝光（MVC）视频。硬件解码会导致部分影片的第二视画面损坏。双视画面均可保持完整分辨率。需要 mvcout 内核模块。播放开始后生效。S928X 芯片始终采用软件解码 3D MVC。"
 #: xbmc/music/MusicDatabase.cpp xbmc/video/VideoDatabase.cpp
 msgctxt "#15011"
 msgid "{0:d} Items failed to export"
@@ -13595,7 +13636,6 @@ msgstr "嵌套扫描"
 msgctxt "#20347"
 msgid "as"
 msgstr "饰演"
-
 #: xbmc/filesystem/VideoDatabaseDirectory/DirectoryNodeMoviesOverview.cpp
 #: xbmc/filesystem/VideoDatabaseDirectory/DirectoryNodeMusicVideosOverview.cpp
 #: xbmc/playlists/SmartPlaylist.cpp
@@ -14858,37 +14898,37 @@ msgctxt "#21460"
 msgid "Position on screen"
 msgstr "在屏幕上的位置"
 
-#. Item list value of setting with label #21460 "Subtitle position on screen"
+#. Item list value of setting with label #21460 "Position on screen"
 #: system/settings/settings.xml
 msgctxt "#21461"
 msgid "Manual"
 msgstr "手动"
 
-#. Item list value of setting with label #21460 "Subtitle position on screen"
+#. Item list value of setting with label #21460 "Position on screen"
 #: system/settings/settings.xml
 msgctxt "#21462"
 msgid "Bottom of video"
 msgstr "视频内底部"
 
-#. Item list value of setting with label #21460 "Subtitle position on screen"
+#. Item list value of setting with label #21460 "Position on screen"
 #: system/settings/settings.xml
 msgctxt "#21463"
 msgid "Bottom of screen"
 msgstr "屏幕底部"
 
-#. Item list value of setting with label #21460 "Subtitle position on screen"
+#. Item list value of setting with label #21460 "Position on screen"
 #: system/settings/settings.xml
 msgctxt "#21464"
 msgid "Top of video"
 msgstr "视频内顶部"
 
-#. Item list value of setting with label #21460 "Subtitle position on screen"
+#. Item list value of setting with label #21460 "Position on screen"
 #: system/settings/settings.xml
 msgctxt "#21465"
 msgid "Top of screen"
 msgstr "屏幕顶部"
 
-#. Description of setting with label #21416 "Select first unwatched TV show season/episode"
+#. Description of setting with label #21416 "Select first unwatched TV show season / episode"
 #: system/settings/settings.xml
 msgctxt "#21466"
 msgid "When entering a TV show season or episode view automatically select the first unwatched season or episode.[CR][On first entry] The first unwatched item will be selected only when a view is entered for the first time.[CR][Always] The first unwatched item will be selected every time a view is entered."
@@ -14929,7 +14969,7 @@ msgctxt "#21472"
 msgid "Include \"All seasons\" and \"Specials\""
 msgstr "包括“所有季”和“特别篇”"
 
-#. Description of setting with label #21472 "Include All Seasons and Specials"
+#. Description of setting with label #21472 "Include \"All seasons\" and \"Specials\""
 #: system/settings/settings.xml
 msgctxt "#21473"
 msgid "Whether or not to consider the items from \"All seasons\" and \"Specials\" in the unwatched item selection."
@@ -15660,7 +15700,8 @@ msgid "Scale teletext to 4:3"
 msgstr "图文字幕比例为 4:3"
 
 #empty strings from id 23056 to 23099
-# strings 23100 thru 23150 reserved for external player
+#strings 23100 thru 23150 reserved for external player
+
 msgctxt "#23100"
 msgid "External player active"
 msgstr "外部播放器激活"
@@ -15670,12 +15711,14 @@ msgid "Click \"OK\" to terminate the player"
 msgstr "点“确定”关闭播放器"
 
 #empty strings from id 23102 to 23103
+
 msgctxt "#23104"
 msgid "Click \"OK\" when playback has ended"
 msgstr "播放完毕时点“确定”"
 
 #empty strings from id 23105 to 23999
-# strings 24000 thru 24299 reserved for the add-ons framework
+#strings 24000 thru 24299 reserved for the add-ons framework
+
 #: xbmc/addons/GUIDialogAddonSettings.cpp
 #: xbmc/addons/GUIViewStateAddonBrowser.cpp
 msgctxt "#24000"
@@ -16278,7 +16321,7 @@ msgctxt "#24116"
 msgid "Default TV show service"
 msgstr "默认电视剧服务"
 
-#. Description of setting with label #24116 "Default TV Service"
+#. Description of setting with label #24116 "Default TV show service"
 #: system/settings/settings.xml
 msgctxt "#24117"
 msgid "Select the service that will be used as default to search for TV show subtitles."
@@ -16762,11 +16805,7 @@ msgctxt "#25014"
 msgid "Manual"
 msgstr "手动"
 
-#. Used to ask user if they want to use a playlist already assigned to an episode
-#: xbmc/video/dialogs/GUIDialogSimpleMenu.cpp
-msgctxt "#25015"
-msgid "Selected playlist is already in use. Associate with this episode instead?"
-msgstr "所选播放列表已被占用。是否改为关联至该单集？"
+#empty string with id 25015
 
 #. Inform user that no valid movie playlist has been found on disc
 #: xbmc/video/dialogs/GUIDialogSimpleMenu.cpp
@@ -16798,6 +16837,27 @@ msgctxt "#25020"
 msgid "Mb/s"
 msgstr "Mb/s"
 
+#: Indicates a playlist shown in the simple menu is already used (and shows what)
+#: xbmc/filesystem/DiscDirectoryHelper.cpp
+msgctxt "#25021"
+msgid "used by {0:s}"
+msgstr "被 {0:s} 使用"
+
+#: Indicates a playlist shown in the simple menu is already used by a movie
+#: xbmc/filesystem/DiscDirectoryHelper.cpp
+msgctxt "#25022"
+msgid "used by movie"
+msgstr "被影片使用"
+
+#: Indicates a playlist shown in the simple menu is already used by an extra
+#: xbmc/filesystem/DiscDirectoryHelper.cpp
+msgctxt "#25023"
+msgid "used by extra"
+msgstr "被花絮使用"
+
+#empty strings from id 25024 to 29800
+
+#: unused
 msgctxt "#29801"
 msgid "QWERTY keyboard"
 msgstr "QWERTY 键盘"
@@ -17247,6 +17307,7 @@ msgid "Alarm"
 msgstr "报警"
 
 #empty strings from id 29972 to 29976
+
 #. Program style name
 #: xbmc/cores/VideoPlayer/VideoPlayerRadioRDS.cpp
 msgctxt "#29977"
@@ -17302,6 +17363,7 @@ msgid "If traffic advisory is send from RDS, volume is increased"
 msgstr "RDS 发送交通信息时，音量增大"
 
 #empty string with id 29986
+
 #. Node title for music artist role, plural of #38036
 #: system/library/music/musicroles/Remixers.xml
 msgctxt "#29987"
@@ -17357,10 +17419,11 @@ msgid "{0:s} (Disc {1:s})"
 msgstr "{0:s}（光盘 {1:s}）"
 
 #empty strings from id 29996 to 33000
-# strings 30000 thru 30999 reserved for plug-ins and plug-in settings
-# strings 31000 thru 31999 reserved for skins
-# strings 32000 thru 32999 reserved for scripts
-# strings 33000 thru 33999 reserved for common strings used in add-ons
+#strings 30000 thru 30999 reserved for plug-ins and plug-in settings
+#strings 31000 thru 31999 reserved for skins
+#strings 32000 thru 32999 reserved for scripts
+#strings 33000 thru 33999 reserved for common strings used in add-ons
+
 #: unknown
 msgctxt "#33001"
 msgid "Trailer quality"
@@ -17885,8 +17948,10 @@ msgctxt "#34118"
 msgid "100%"
 msgstr "100%"
 
+
 #empty strings from id 34114 to 34119
-# 34119 reserved for future use
+#34119 reserved for future use
+
 #: system/settings/settings.xml
 msgctxt "#34120"
 msgid "Play GUI sounds"
@@ -17953,7 +18018,8 @@ msgid "384.0"
 msgstr "384.0"
 
 #empty strings from id 34131 to 34200
-# 34131-34200 reserved for future use
+#34131-34200 reserved for future use
+
 #: xbmc/PlayListPlayer.cpp
 msgctxt "#34201"
 msgid "Can't find a next item to play"
@@ -17965,6 +18031,7 @@ msgid "Can't find a previous item to play"
 msgstr "未找到上一播放项目"
 
 #empty strings from id 34203 to 34219
+
 #. Manual HDR toggle (ACTION_HDR_TOGGLE) - HDR On/Off toast caption
 #: xbmc/Application.cpp
 msgctxt "#34220"
@@ -19877,11 +19944,11 @@ msgctxt "#36096"
 msgid "Use system HDR/SDR brightness balance"
 msgstr "使用系统 HDR/SDR 亮度平衡"
 
-#. Label of setting "System / Display / GUI peak luminance in HDR PQ mode"
+#. Label of setting "System / Display / GUI peak luminance"
 #: system/settings/settings.xml
 msgctxt "#36097"
-msgid "GUI peak luminance in HDR PQ mode"
-msgstr "HDR PQ 模式下的用户界面峰值亮度"
+msgid "GUI peak luminance"
+msgstr "用户界面峰值亮度"
 
 #. Label of setting "System / Display / Use 10 bit for SDR"
 #: system/settings/settings.xml
@@ -19961,7 +20028,7 @@ msgctxt "#36110"
 msgid "Select or disable the sounds used in the user interface."
 msgstr "选择或禁用用户界面声音。"
 
-#. Description of setting with label #13305 "Show RSS news feed"
+#. Description of setting with label #13305 "Show RSS news feeds"
 #: system/settings/settings.xml
 msgctxt "#36111"
 msgid "Turn this off to remove the scrolling RSS news ticker."
@@ -19973,7 +20040,7 @@ msgctxt "#36112"
 msgid "Edit the RSS feeds."
 msgstr "编辑 RSS 信源。"
 
-#. Description of settings category with label #14090 "Regional"
+#. Description of settings category with label #14222 "Regional"
 #: system/settings/settings.xml
 msgctxt "#36113"
 msgid "This category contains all locale / regional settings."
@@ -20147,7 +20214,7 @@ msgctxt "#36144"
 msgid "Select in which cases you want to hide the season nodes of TV shows. If hidden, selecting a TV show will directly jump into the episodes view."
 msgstr "选择在哪些情况下隐藏电视剧的季节点。若隐藏，选择电视剧后将直接进入剧集视图。"
 
-#. Description of setting with label #20458 "Group movies in sets"
+#. Description of setting with label #20458 "Show movie sets"
 #: system/settings/settings.xml
 msgctxt "#36145"
 msgid "When enabled, movies belonging to a \"Movie set\" are grouped together under one entry for the set in the movie library, this entry can then be opened to display the individual movies. When disabled, each movie will have its own entry in the movie library even if it belongs to a set."
@@ -20207,25 +20274,25 @@ msgctxt "#36154"
 msgid "Use high quality scalers when upscaling a video by at least this percentage. A value below 5% makes little sense as video is processed with high GPU load without any visible picture quality improvements."
 msgstr "当放大视频达到此比例时使用高品质缩放器。数值小于 5% 时意义不大，因为加大 GPU 负荷却无明显图像质量改善。"
 
-#. Description of setting with label #13425 "Allow hardware acceleration (VDPAU)"
+#. Description of setting with label #13425 "Allow hardware acceleration - VDPAU"
 #: system/settings/settings.xml
 msgctxt "#36155"
 msgid "Enable VDPAU hardware decoding of video files, mainly used for NVIDIA graphics and in some circumstances AMD graphics."
 msgstr "启用视频文件 VDPAU 硬件解码。主要针对 NVIDIA 显卡，也有部分 AMD 显卡支持。"
 
-#. Description of setting with label #13426 "Allow hardware acceleration (VAAPI)"
+#. Description of setting with label #13426 "Allow hardware acceleration - VAAPI"
 #: system/settings/settings.xml
 msgctxt "#36156"
 msgid "Enable VAAPI hardware decoding of video files, mainly used for Intel graphics and in some circumstances AMD graphics."
 msgstr "启用视频文件 VAAPI 硬件解码。主要针对 Intel 显卡，也有部分 AMD 显卡支持。"
 
-#. Description of setting with label #20470 "Use movie sets for single movies"
+#. Description of setting with label #20470 "Include sets containing a single movie"
 #: system/settings/settings.xml
 msgctxt "#36157"
 msgid "When enabled, a \"Movie set\" entry is used even if the movie library contains only a single movie from that set. When disabled, a \"Movie set\" entry is used only if the movie library contains more than one movie from that set."
 msgstr "启用时，对于仅含单部电影的影片集也分项显示。禁用时，只有包含不只一部电影的影片集才分项显示。"
 
-#. Description of setting with label #13427 "Allow hardware acceleration (DXVA2)"
+#. Description of setting with label #13427 "Allow hardware acceleration - DXVA2"
 #: system/settings/settings.xml
 msgctxt "#36158"
 msgid "Enable DXVA2 hardware decoding of video files."
@@ -20233,19 +20300,19 @@ msgstr "启用视频文件 DXVA2 硬件解码。"
 
 #empty string with id 36159
 
-#. Description of setting with label #13429 "Allow hardware acceleration (VDADecoder)"
+#. Description of setting with label #13429 "Allow hardware acceleration - VTBDecoder"
 #: system/settings/settings.xml
 msgctxt "#36160"
 msgid "Enable VTB hardware decoding of video files."
 msgstr "启用视频文件 VTB 硬件解码。"
 
-#. Description of setting with label #508 "Startup action"
+#. Description of setting with label #39100 "Perform on startup"
 #: system/settings/settings.xml
 msgctxt "#36161"
 msgid "Select an action Kodi will perform on startup."
 msgstr "选择启动时 Kodi 执行的动作。"
 
-#. Description of setting with label #13432 "Allow hardware acceleration (VideoToolbox)"
+#. Description of setting with label #13432 "Allow hardware acceleration - VideoToolbox"
 #: system/settings/settings.xml
 msgctxt "#36162"
 msgid "Enable VideoToolbox hardware decoding of video files."
@@ -20281,7 +20348,7 @@ msgctxt "#36167"
 msgid "Choose which time format is used for displaying the time in the user interface."
 msgstr "选择用户界面中显示时间使用的格式。"
 
-#. Description of setting with label #14108 "Use 12/24-hour format"
+#. Description of setting with label #14108 "Use 12 / 24-hour format"
 #: system/settings/settings.xml
 msgctxt "#36168"
 msgid "Choose whether to use 12 or 24-hour format for displaying the time in the user interface."
@@ -20305,7 +20372,7 @@ msgctxt "#36171"
 msgid "Select the zoom level that 4:3 videos are shown on widescreen displays."
 msgstr "选择在宽屏显示屏显示 4:3 视频的缩放级别。"
 
-#. Description of setting with label #13430 "Allow hardware acceleration - PRIME"
+#. Description of setting with label #13430 "Allow using DRM PRIME decoder"
 #: system/settings/settings.xml
 msgctxt "#36172"
 msgid "Enable PRIME decoding of video files"
@@ -20341,7 +20408,7 @@ msgctxt "#36177"
 msgid "Toggle between [Choose], [Play] (default), [Show information] and [Queue item].[CR][Choose] will open a context menu to select an item, e.g. show information.[CR][Play] will play videos as defined by the setting 'Default play action'.[CR][Show information] will open the video's information dialog.[CR][Queue item] will append the video to the video playlist."
 msgstr "在[选择]、[播放]（默认）、[显示信息]和[队列项目]之间切换。[CR][选择]将打开一个上下文菜单来选择一个项目，例如显示信息。[CR][播放]将按照 \"默认播放操作 \"设置来播放视频。[CR][显示信息]将打开视频的信息对话框。[CR][队列项目]将把视频添加到视频播放列表中。"
 
-#. Description of setting with label #20433 "Extract thumbnails and video information"
+#. Description of setting with label #20433 "Extract video information from files"
 #: system/settings/settings.xml
 msgctxt "#36178"
 msgid "Extract metadata information such as codec and aspect ratio from videos."
@@ -20353,7 +20420,7 @@ msgctxt "#36179"
 msgid "When a file is scanned into the library it will display the metadata title instead of the file name."
 msgstr "文件被扫描进资料库后，将显示其元数据标题而非文件名。"
 
-#. Description of setting with label #20433 "Extract thumbnails and video information"
+#. Description of setting with label #38190 "Extract thumbnails from video files"
 #: system/settings/settings.xml
 msgctxt "#36180"
 msgid "Extract thumbnails to display in library mode."
@@ -20424,13 +20491,13 @@ msgctxt "#36191"
 msgid "Set a custom directory for your subtitles. This can be a file share."
 msgstr "设置用于字幕的自定义目录。可以是一个网络共享目录。"
 
-#. Description of setting with label #21460 "Subtitle location on screen"
+#. Description of setting with label #21460 "Position on screen"
 #: system/settings/settings.xml
 msgctxt "#36192"
 msgid "Location of subtitles on the screen. [Bottom of video] / [Top of video] When possible the subtitles will be positioned within the video area (depends on video encoding). Please note that some forced positions in the subtitles cannot be changed."
 msgstr "字幕在屏幕上的位置。[视频下方] / [视频上方] 可能的情况下字幕将被放置在黑边内（取决于视频编码）。请注意，字幕中的某些强制位置无法更改。"
 
-#. Description of settings category with label #14087 "DVDs"
+#. Description of settings category with label #14087 "Discs"
 #: system/settings/settings.xml
 msgctxt "#36193"
 msgid "This category contains the settings for how DVD's, Blu-ray, & CD's are handled."
@@ -20582,7 +20649,7 @@ msgctxt "#36222"
 msgid "Don't import the guide data while playing TV to minimise CPU usage."
 msgstr "播放电视时不导入节目指南数据以减少 CPU 占用。"
 
-#. Description of setting with label #13438 "Allow Hardware Accelleration with DRM PRIME"
+#. Description of setting with label #13430 "Allow using DRM PRIME decoder"
 #: system/settings/settings.xml
 msgctxt "#36223"
 msgid "Enable PRIME hardware decoding of video files, used if ffmpeg PRIME hwaccel is available."
@@ -20781,7 +20848,7 @@ msgctxt "#36260"
 msgid "No info available yet."
 msgstr "无可用信息。"
 
-#. Description of setting with label #19108 "Refreshrate"
+#. Description of setting with label #19108 "Fallback framerate"
 #: system/settings/settings.xml
 msgctxt "#36261"
 msgid "If enabled, this framerate is used for streams we were not able to detect fps."
@@ -20823,17 +20890,17 @@ msgctxt "#36267"
 msgid "Read the ReplayGain information encoded in your audio files by a program such as MP3Gain and normalise the sound levels accordingly."
 msgstr "用类似 MP3Gain 的程序读取编码到音频文件中的回放增益信息，并以此调整声音级到正常水平。"
 
-#. Description of setting with label #641 "Files with ReplayGain information"
+#. Description of setting with label #641 "Preamp for files with ReplayGain information"
 #: system/settings/settings.xml
 msgctxt "#36268"
-msgid "Reference volume (PreAmp level) to use for files with encoded ReplayGain information. Default is 89dB as per standard. Change with caution."
-msgstr "含回放增益编码信息的文件使用的参考音量（前置级）。默认的标准是 89 dB，慎改。"
+msgid "Preamplification level to use for files with encoded ReplayGain information."
+msgstr "含回放增益编码信息的文件使用的前置放大级别。"
 
-#. Description of setting with label #642 "PreAmp Level - Non ReplayGained files"
+#. Description of setting with label #642 "Preamp for files without ReplayGain information"
 #: system/settings/settings.xml
 msgctxt "#36269"
-msgid "Reference volume (PreAmp level) to use for files without encoded ReplayGain information. Default is 89dB as per standard. Change with caution."
-msgstr "不含回放增益编码信息的文件使用的参考音量（前置级）。默认的标准是 89 dB，慎改。"
+msgid "Preamplification level to use for files without encoded ReplayGain information."
+msgstr "不含回放增益编码信息的文件使用的前置放大级别。"
 
 #. Description of setting with label #643 "Avoid clipping protection on ReplayGained files"
 #: system/settings/settings.xml
@@ -20952,7 +21019,7 @@ msgctxt "#36290"
 msgid "For FLAC define compression level, default 5."
 msgstr "为 FLAC 指定压缩级别，默认为 5。"
 
-#. Description of setting with label #14099 "Eject disc when CD ripping is complete"
+#. Description of setting with label #14099 "Eject disc when the CD ripping is complete"
 #: system/settings/settings.xml
 msgctxt "#36291"
 msgid "Auto eject disc after rip is complete."
@@ -20970,7 +21037,7 @@ msgctxt "#36293"
 msgid "Select the folder where artist information (nfo files and images) should be saved in."
 msgstr "选择保存歌手信息（nfo 文件和图片）的文件夹。"
 
-#. Description of setting with label #20228 "Use artist sortname"
+#. Description of setting with label #20228 "Use artist sortname when sorting by artist"
 #: system/settings/settings.xml
 msgctxt "#36294"
 msgid "When sorting music items by artist use sortname e.g. Parton, Dolly rather than name."
@@ -21101,7 +21168,7 @@ msgctxt "#36316"
 msgid "This category contains the settings for how the weather service is handled."
 msgstr "此功能区包含天气服务处理相关的设置。"
 
-#. Description of settings category with label #0 "Locations"
+#. Description of settings category with label #0 "Programs"
 #: system/settings/settings.xml
 msgctxt "#36317"
 msgid "Select up to three locations for which the weather can be displayed."
@@ -21131,7 +21198,7 @@ msgctxt "#36321"
 msgid "The name to display for this device when using various network services."
 msgstr "此设备使用各种网络服务时所显示的名称。"
 
-#. Description of settings category with label #20187 "UPnP/DLNA"
+#. Description of settings category with label #20187 "UPnP / DLNA"
 #: system/settings/settings.xml
 msgctxt "#36322"
 msgid "This category contains the settings for how the UPnP service is handled. UPnP is also called DLNA on most consumer electronics."
@@ -21149,7 +21216,7 @@ msgctxt "#36324"
 msgid "When a manual or automatic library update occurs, notify UPnP clients."
 msgstr "当人工或自动更新资料库时，通知 UPnP 客户端。"
 
-#. Description of setting with label #21881 "Allow playback control via UPnP"
+#. Description of setting with label #21881 "Allow remote control via UPnP"
 #: system/settings/settings.xml
 msgctxt "#36325"
 msgid "Enable the UPnP client. This allows you to stream media from any UPnP server with a control point and control playback from that server."
@@ -21161,7 +21228,7 @@ msgctxt "#36326"
 msgid "Enable the UPnP control point. This allows you to stream media to any UPnP client and control its playback."
 msgstr "启用 UPnP 控制点。这允许您将媒体流式传输到任何 UPnP 客户端并控制其回放。"
 
-#. Description of settings category with label #20187 "Control"
+#. Description of settings category with label #14223 "Control"
 #: system/settings/settings.xml
 msgctxt "#36327"
 msgid "This category contains the settings for how the web server service and the application control service is handled."
@@ -21185,7 +21252,7 @@ msgctxt "#36330"
 msgid "Define the web server username. Must be set when authentication is enabled."
 msgstr "设置 Web 服务器用户名。启用身份验证时必须设置。"
 
-#. Description of setting with label #1048 "Password"
+#. Description of setting with label #733 "Password"
 #: system/settings/settings.xml
 msgctxt "#36331"
 msgid "Define the web server password. Must be set when authentication is enabled."
@@ -21203,7 +21270,7 @@ msgctxt "#36333"
 msgid "This category contains the settings for how the remote control service is handled."
 msgstr "此功能区包含远程控制服务处理相关设置。"
 
-#. Description of setting with label #791 "Allow remote control from programs on this system"
+#. Description of setting with label #14276 "Allow remote control from applications on this system"
 #: system/settings/settings.xml
 msgctxt "#36334"
 msgid "Allow programs on this device to control this application via the JSON-RPC over WebSocket, JSON-RPC over TCP, or EventServer protocol, without authentication."
@@ -21227,7 +21294,7 @@ msgctxt "#36337"
 msgid "Define the maximum number of clients that can connect."
 msgstr "定义可连接的最大客户端数。"
 
-#. Description of setting with label #794 "Allow remote control from programs on other systems"
+#. Description of setting with label #14277 "Allow remote control from applications on other systems"
 #: system/settings/settings.xml
 msgctxt "#36338"
 msgid "Allow programs on the network to control this application via the JSON-RPC over WebSocket, JSON-RPC over TCP, or EventServer protocol, without authentication. It allows anyone with access to the network to completely control this application and, therefore, this device. Never expose these interfaces to the Internet."
@@ -21299,13 +21366,13 @@ msgctxt "#36349"
 msgid "Section that contains the system related settings for the device this application is installed on."
 msgstr "包含此应用所安装的设备的系统相关设置的区域。"
 
-#. Description of setting with label #13026 "Try to wake remote servers on access"
+#. Description of setting with label #13026 "Try to wakeup remote servers on access"
 #: system/settings/settings.xml
 msgctxt "#36350"
 msgid "Automatically send Wake-on-LAN to server(s) right before trying to access shared files or services."
 msgstr "访问共享文件或服务前自动向服务器发送网络唤醒。"
 
-#. Description of setting with label #21373 "Display Mode"
+#. Description of setting with label #240 "Display mode"
 #: system/settings/settings.xml
 msgctxt "#36351"
 msgid "Changes the way this application is displayed on the selected screen. Either in a window or fullscreen."
@@ -21341,7 +21408,7 @@ msgctxt "#36356"
 msgid "This category contains the settings for how the NFS client is handled."
 msgstr "此类别包含有关如何处理 NFS 客户端的设置。"
 
-#. Description of setting with label #214 "Video calibration..."
+#. Description of setting with label #214 "Video calibration"
 #: system/settings/settings.xml
 msgctxt "#36357"
 msgid "Calibrate the user interface by adjusting the overscan. Use this tool if the image being displayed is too large or small for your display."
@@ -21404,7 +21471,7 @@ msgctxt "#36367"
 msgid "Select the maximum number of audio channels / speakers available for decoded audio. If optical / coax digital outputs are used, this must be set to 2.0"
 msgstr "选择解码音频可用的最大声道/扬声器数。如果使用光纤/同轴数字输出则应设置为 2.0"
 
-#. Description of setting with label #348 "Enable passthrough"
+#. Description of setting with label #348 "Allow passthrough"
 #: system/settings/settings.xml
 msgctxt "#36368"
 msgid "Select to allow passthrough audio for playback of compressed audio such as Dolby Digital (AC3), DTS, etc. The Client of the AudioEngine, for example Videoplayer, might decide to decode the audio stream under certain conditions. In Videoplayer case, passthrough won't be used for live streams and when you sync playback to display."
@@ -21440,7 +21507,7 @@ msgctxt "#36373"
 msgid "Configure how interface sounds are handled, such as menu navigation and important notifications."
 msgstr "设置用户界面声音效果处理，如菜单导航和重要通知。"
 
-#. Description of settings category with label #15087 "Input"
+#. Description of settings category with label #14125 "Input"
 #: system/settings/settings.xml
 msgctxt "#36374"
 msgid "This category contains the settings for how input devices are handled."
@@ -21584,7 +21651,7 @@ msgctxt "#36397"
 msgid "If enabled, the master lock code is required to unlock this application on startup."
 msgstr "如启用，此应用启动时需要管理员锁定码解锁。"
 
-#. Description of setting with label #20076 "Max Retries"
+#. Description of setting with label #12362 "Shutdown system if number of master lock retries is exceeded"
 #: system/settings/settings.xml
 msgctxt "#36398"
 msgid "Define the maximum number of retries before this application is closed down."
@@ -21770,7 +21837,7 @@ msgctxt "#36430"
 msgid "Configure how video processing will be accelerated. This includes things like decoding and scaling."
 msgstr "设置视频处理如何加速，包括解码和缩放。"
 
-#. Description of setting with label #13438 "Show event log"
+#. Description of setting with label #14114 "Show event log"
 #: system/settings/settings.xml
 msgctxt "#36431"
 msgid "Shows all events in the event log for the current profile with options to only show specific levels."
@@ -21852,17 +21919,17 @@ msgctxt "#36443"
 msgid "Whitelisted modes give the user the control to choose which display modes are allowed or not allowed to be used"
 msgstr "白名单模式允许用户可以控制允许或不允许使用哪些显示模式"
 
-#. Description of setting with label #14127 "Whitelist"
+#. Description of setting with label #14127 "Allow 3:2 pulldown refresh rates"
 #: system/settings/settings.xml
 msgctxt "#36444"
 msgid "Select this option to allow using 3:2 pulldown refresh rates (playing 23.976 FPS video on a 59.94 Hz monitor or playing 24 FPS video on a 60 Hz monitor). You may want to use this option if your monitor doesn't have a 23.976 Hz or 24 Hz mode."
 msgstr "选择此选项可允许使用 3:2 下拉刷新率（在 59.94 Hz 显示器上播放 23.976 FPS 视频或在 60 Hz 显示器上播放 24 FPS 视频）。如果您的显示器没有 23.976 Hz 或 24 Hz 模式，则可能要使用此选项。"
 
-#. Description of setting with label #14128 "Whitelist"
+#. Description of setting with label #14128 "Allow double refresh rates"
 #: system/settings/settings.xml
 msgctxt "#36445"
-msgid "Select this option to allow using whole-number repeat rate (playing 24 FPS video on a 120 Hz monitor or playing 30 FPS video on a 120 Hz monitor)."
-msgstr "选中此选项将允许使用整数倍重复帧率（例如在 120Hz 显示器上播放 24Hz 视频，或在 120Hz 显示器上播放 30Hz 视频）。"
+msgid "Select this option to allow using double refresh rates (playing 29.97 FPS video on a 59.94 Hz monitor or playing 30 FPS video on a 60 Hz monitor). You may want to use this option if your monitor doesn't have a 29.97 Hz or 30 Hz mode."
+msgstr "选择此选项可允许使用双倍刷新率（在 59.94 Hz 显示器上播放 29.97 FPS 视频或在 60 Hz 显示器上播放 30 FPS 视频）。如果您的显示器没有 29.97 Hz 或 30 Hz 模式，则可能要使用此选项。"
 
 #. Value of the track order settings #36448 #36450 #36452
 #: system/settings/settings.xml
@@ -21882,7 +21949,19 @@ msgctxt "#36448"
 msgid "Video files only: display order in the stream selection dialogs. [Media] stream order in the media, [Sorted] sorted using the stream attributes[CR]"
 msgstr "仅视频文件：流选择对话框中的显示顺序。[媒体] 媒体文件中的流顺序，[排序] 按流属性排序[CR]"
 
-#empty strings from id 36449 to 36459
+#. Description of setting with label #14129 "Allow whole-number frame repeat"
+#: system/settings/settings.xml
+msgctxt "#36449"
+msgid "Select this option to allow using whole-number repeat rate (playing 24 FPS video on a 120 Hz monitor or playing 30 FPS video on a 120 Hz monitor)."
+msgstr "选择此选项以允许使用整数倍刷新率（在 120 Hz 显示器上播放 24 FPS 视频，或在 120 Hz 显示器上播放 30 FPS 视频）。"
+
+#. Description of setting with label #13438 "Allow hardware acceleration - amcodec"
+#: system/settings/settings.xml
+msgctxt "#36450"
+msgid "Enable hardware video decode using Amlogic decoder."
+msgstr "启用 Amlogic 解码器进行硬件视频解码。"
+
+#empty strings from id 36451 to 36459
 
 #. Description of settings with label #14112 "Enable event logging"
 #: system/settings/settings.xml
@@ -22040,13 +22119,13 @@ msgctxt "#36532"
 msgid "Same as movie"
 msgstr "同影片格式"
 
-#. Description of setting with label #346 "Normalize levels on downmix"
+#. Description of setting with label #346 "Maintain original volume on downmix"
 #: settings/DisplaySettings.cpp
 msgctxt "#36533"
 msgid "Select how audio is downmixed, e.g. from 5.1 to 2.0.[CR][Enabled] Maintains volume level of the original audio source however the dynamic range is compressed.[CR][Disabled] Maintains the dynamic range of the original audio source when downmixed however volume will be lower. Note: Dynamic range is the difference between the quietest and loudest sounds in an audio source. Enable this setting if movie dialogues are barely audible."
 msgstr "选择音频混缩方式，如从 5.1 到 2.0：[CR][启用] 保持原始音频源的音量级别，动态范围将被压缩。[CR][禁用] 混缩时保持原始音频源的动态范围，音量将减小。注意：动态范围是音频源中最安静和最大声之间的差异。当电影中的对话几乎听不见时启用此设置。"
 
-#. Description of setting with label #668 "Component-specific logging..."
+#. Description of setting with label #668 "Specify component-specific logging..."
 #: system/settings/settings.xml
 msgctxt "#36534"
 msgid "Specify additional libraries whose verbose messages are to be included in the debug log."
@@ -22066,7 +22145,7 @@ msgctxt "#36536"
 msgid "Invert stereoscopic 3D mode (flip eyes)"
 msgstr "反转立体模式（左右眼）"
 
-#. Description of setting with label #36520 "Playback mode of stereoscopic videos"
+#. Description of setting with label #36520 "Playback mode of stereoscopic 3D videos"
 #: system/settings/settings.xml
 msgctxt "#36537"
 msgid "Select in which mode stereoscopic 3D videos will be played.[CR][Ask me] Will show a dialogue to select the desired mode for each playback.[CR][Preferred mode] Will use the preferred mode specified in the \"System -> Video hardware\" section of the settings.[CR][Monoscopic / 2D] Will play the video in mono / 2D.[CR][Ignore] Disables any stereoscopic 3D processing and handling."
@@ -22078,7 +22157,7 @@ msgctxt "#36538"
 msgid "[Enabled] Switch GUI (and some TVs) back to 2D mode, between videos in a playlist or when playback ended.[CR][Disabled] GUI and TV will stay in stereoscopic 3D mode. For video playlists with mixed stereoscopic 3D and 2D content, then the GUI will also stay in stereoscopic 3D mode even when a non-stereoscopic 2D video is playing."
 msgstr "[启用] 播放列表中的视频之间或播放结束时图形用户界面（及电视）切换回 2D 模式。[CR][禁用] 图形用户界面和电视保持 3D 立体模式。对于混合有 3D 和 2D 内容的视频播放列表，即使播放 2D 视频时，图形用户界面也一直保持为 3D 立体模式。"
 
-#. Description of setting with label #36500 "Stereoscopic mode (current)"
+#. Description of setting with label #36500 "Stereoscopic 3D mode / Current"
 #: system/settings/settings.xml
 msgctxt "#36539"
 msgid "Changes the stereoscopic 3D mode of the user interface."
@@ -22109,17 +22188,17 @@ msgctxt "#36545"
 msgid "Stereoscopic 3D depth of subtitles"
 msgstr "字幕立体深度"
 
-#. Description of setting with label #36545 "Subtitle stereoscopic depth"
+#. Description of setting with label #36545 "Stereoscopic 3D depth of subtitles"
 #: system/settings/settings.xml
 msgctxt "#36546"
 msgid "Sets the visual depth of subtitles for stereoscopic 3D videos. The higher the value, the closer the subtitles will appear to the viewer."
 msgstr "设置字幕在立体 3D 视频中的远近距离。数值越大则会感觉字幕离你越近。"
 
-#. Description of setting with label #36097 "System / Display / GUI peak luminance in HDR PQ mode"
+#. Description of setting with label #36097 "System / Display / GUI peak luminance"
 #: system/settings/settings.xml
 msgctxt "#36547"
-msgid "Sets the peak luminance level for GUI elements while the display is in HDR PQ mode. This affects all OSD, subtitles and graphics that are SDR in origin."
-msgstr "当显示器处于 HDR PQ 模式时，设置用户界面元素的峰值亮度级别。这会影响所有源自 SDR 的 OSD、字幕和图形。"
+msgid "Sets the peak luminance level for GUI elements while the display is in HDR PQ or HLG mode, applied via GUI compositing."
+msgstr "当显示器处于 HDR PQ 或 HLG 模式时，设置用户界面元素的峰值亮度级别，并通过用户界面合成应用。"
 
 #. Description of setting with label #37021 "Set GUI resolution limit"
 #: system/settings/android.xml system/settings/gbm.xml
@@ -22127,7 +22206,7 @@ msgctxt "#36548"
 msgid "Limits resolution of GUI to save memory. Does not affect video playback. Requires restart."
 msgstr "限制图形用户界面分辨率以节省内存。不影响视频播放。需要重新启动。"
 
-#. Description of setting with label #1268 "iOS 8 compatibility mode"
+#. Description of setting with label #1268 "Enable AirPlay \"Videos\" and \"Pictures\" support"
 #: system/settings/settings.xml
 msgctxt "#36549"
 msgid "Enables support for receiving \"Videos\" and \"Pictures\" via AirPlay. This needs to be disabled when using iOS 9 or later clients to restore music streaming via AirPlay. \"Videos\" and \"Pictures\" are only supported for iOS clients using iOS 8.x and older."
@@ -22383,7 +22462,7 @@ msgctxt "#36597"
 msgid "{0:1.2f}"
 msgstr "{0:1.2f}"
 
-#. Description of setting with label #36099 "Dither"
+#. Description of setting with label #36099 "Dithering"
 #: system/settings/settings.xml
 msgctxt "#36598"
 msgid "Eliminate banding caused by RGB level conversion or other processing by adding a small amount of noise to the picture. This can be disabled for slower systems, or when Kodi is set to limited range RGB output and no video processing is needed."
@@ -22623,7 +22702,7 @@ msgctxt "#36638"
 msgid "Remove all orphaned add-ons"
 msgstr "删除所有孤立插件"
 
-#. Description of setting with label #36638 "Remove all orphaned dependencies"
+#. Description of setting with label #36638 "Remove all orphaned add-ons"
 #: system/settings/settings.xml
 msgctxt "#36639"
 msgid "Remove all modules and support libraries that have been automatically installed and are in an orphaned state."
@@ -23216,7 +23295,7 @@ msgctxt "#38013"
 msgid "Limit GUI updates during playback"
 msgstr "播放时限制图形用户界面更新"
 
-#. Description for the setting with label #38013 "Limit GUI updates when playing video"
+#. Description for the setting with label #38013 "Limit GUI updates during playback"
 #: system/settings/settings.xml
 msgctxt "#38014"
 msgid "Limits the speed (fps) used to update the GUI while playing videos. This can reduce CPU load and fix playback issues while the GUI is shown."
@@ -23956,7 +24035,7 @@ msgctxt "#39016"
 msgid "Resume audiobook"
 msgstr "继续播放有声读物"
 
-#. Description of setting with label #21358 "Share my libraries"
+#. Description of setting with label #21358 "Enable UPnP support"
 #: system/settings/settings.xml
 msgctxt "#39017"
 msgid "Enables UPnP. This allows you to stream media in your libraries to a UPnP client and to detect remote UPnP servers."
@@ -24292,7 +24371,7 @@ msgctxt "#39143"
 msgid "Movie art types whitelist"
 msgstr "电影艺术图片类型白名单"
 
-#. Description of setting with label #39150 "Movie art types whitelist"
+#. Description of setting with label #39143 "Movie art types whitelist"
 #: system/settings/settings.xml
 msgctxt "#39144"
 msgid "Limit the movie and movie set artwork fetched locally or applied from scraper remote art results to just those art types in the whitelist"
@@ -24303,7 +24382,7 @@ msgctxt "#39145"
 msgid "TV show art types whitelist"
 msgstr "电视剧艺术图片类型白名单"
 
-#. Description of setting with label #39152 "TV show art types whitelist"
+#. Description of setting with label #39145 "TV show art types whitelist"
 #: system/settings/settings.xml
 msgctxt "#39146"
 msgid "Limit the TV show and season artwork fetched locally or applied from scraper remote art results to just those art types in the whitelist"
@@ -24314,7 +24393,7 @@ msgctxt "#39147"
 msgid "Episode art types whitelist"
 msgstr "集艺术图片类型白名单"
 
-#. Description of setting with label #39154 "Episode art types whitelist"
+#. Description of setting with label #39147 "Episode art types whitelist"
 #: system/settings/settings.xml
 msgctxt "#39148"
 msgid "Limit the episode artwork fetched locally or applied from scraper remote art results to just those art types in the whitelist"
@@ -24325,7 +24404,7 @@ msgctxt "#39149"
 msgid "Music video art types whitelist"
 msgstr "音乐电视艺术图片类型白名单"
 
-#. Description of setting with label #39156 "Music video art types whitelist"
+#. Description of setting with label #39149 "Music video art types whitelist"
 #: system/settings/settings.xml
 msgctxt "#39150"
 msgid "Limit the music video artwork fetched locally or applied from scraper remote art results to just those art types in the whitelist"
@@ -24412,25 +24491,25 @@ msgctxt "#39165"
 msgid "Background type"
 msgstr "背景类型"
 
-#. Item list value of setting with label #39166 "Background type"
+#. Item list value of setting with label #39165 "Background type"
 #: system/settings/settings.xml
 msgctxt "#39166"
 msgid "Shadow"
 msgstr "阴影"
 
-#. Item list value of setting with label #39166 "Background type"
+#. Item list value of setting with label #39165 "Background type"
 #: system/settings/settings.xml
 msgctxt "#39167"
 msgid "Box"
 msgstr "方框"
 
-#. Item list value of setting with label #39166 "Background type"
+#. Item list value of setting with label #39165 "Background type"
 #: system/settings/settings.xml
 msgctxt "#39168"
 msgid "Square box"
 msgstr "正方框"
 
-#. Description of setting with label #39166 "Background type"
+#. Description of setting with label #39165 "Background type"
 #: system/settings/settings.xml
 msgctxt "#39169"
 msgid "Type of background to apply to subtitles."
@@ -24544,7 +24623,7 @@ msgctxt "#39187"
 msgid "Closed caption subtitles"
 msgstr "闭路字幕"
 
-#. Item list value of setting with label #39166 "Background type"
+#. Item list value of setting with label #39165 "Background type"
 #: system/settings/settings.xml
 msgctxt "#39188"
 msgid "No background"
@@ -24690,10 +24769,40 @@ msgstr "不显示与音频语言一致的字幕"
 #. Help text for setting "Don't show subtitles matching the audio language" of label #39211
 #: system/settings/settings.xml
 msgctxt "#39212"
-msgid "Do not turn on subtitles that are in the same language as the audio being played. Forced subtitles are not affected."
-msgstr "不会自动开启和播放音频语言相同的字幕。强制字幕不受此选项影响。"
+msgid "Do not turn on subtitles that are in the same language as the audio being played. Forced subtitles in that language are turned on instead, where the video has them."
+msgstr "不要开启与所播放音频语言相同的字幕。若视频包含该语言的强制字幕，则会改为开启这些强制字幕。"
 
-#empty strings from id 39213 to 39899
+#. Title of the setting that chooses which audio stream a library list describes
+#: system/settings/settings.xml
+msgctxt "#39213"
+msgid "Language details to display"
+msgstr "要显示的语言详细信息"
+
+#. Help text for setting "Language details to display" of label #39213
+#: system/settings/settings.xml
+msgctxt "#39214"
+msgid "Which audio stream the language, codec and channel count shown against an item describe.[CR][Player][Default] The language that will normally be played.[CR][Media default] The default language for the media. If not set, then the best audio stream is shown.[CR][Best] The best audio stream as determined by codec quality and channel count."
+msgstr "条目旁显示的语言、编解码器和声道数所描述的是哪个音频流。[CR][播放器][默认] 通常会播放的语言。[CR][媒体默认] 媒体的默认语言。如果未设置，则显示最佳音频流。[CR][最佳] 根据编解码器质量和声道数确定的最佳音频流。"
+
+#. Value of the setting "Language details to display" - describe the stream that will be played
+#: system/settings/settings.xml
+msgctxt "#39215"
+msgid "Player"
+msgstr "播放器"
+
+#. Value of the setting "Language details to display" - describe the media's default stream
+#: system/settings/settings.xml
+msgctxt "#39216"
+msgid "Media default"
+msgstr "媒体默认"
+
+#. Value of the setting "Language details to display" - describe the technically best stream
+#: system/settings/settings.xml
+msgctxt "#39217"
+msgid "Best"
+msgstr "最佳"
+
+#empty strings from id 39218 to 39899
 
 #. List formatting: pattern used to join a list of exactly two items, e.g. "A and B"
 #. STR_LIST_AND_TWO
@@ -25037,7 +25146,38 @@ msgctxt "#40046"
 msgid "Ungroup"
 msgstr "取消分组"
 
-#empty strings with id 40047 to 40201
+#. Shown when the playlist chosen for a movie version already belongs to another version of it
+#: xbmc/dialogs/GUIDialogSimpleMenu.cpp
+#: xbmc/video/dialogs/GUIDialogVideoManagerVersions.cpp
+msgctxt "#40047"
+msgid "This playlist already belongs to another version of this movie."
+msgstr "此播放列表已属于该电影的另一个版本。"
+
+#. Asked before a playlist already assigned to another episode is taken away from it
+#: xbmc/dialogs/GUIDialogSimpleMenu.cpp
+msgctxt "#40048"
+msgid "The selected playlist is already assigned to another episode. Reassign it?"
+msgstr "所选播放列表已分配给另一剧集。是否重新分配？"
+
+#. Asked before a playlist already assigned to another movie version is taken away from it
+#: xbmc/dialogs/GUIDialogSimpleMenu.cpp
+msgctxt "#40049"
+msgid "The selected playlist is already assigned to another movie version. Reassign it?"
+msgstr "所选播放列表已分配给另一个电影版本。是否重新分配？"
+
+#. Asked before an episode joins a playlist that several episodes already share
+#: xbmc/dialogs/GUIDialogSimpleMenu.cpp
+msgctxt "#40050"
+msgid "The selected playlist is shared by several episodes. Use it for this item as well?"
+msgstr "所选播放列表由多个剧集共享。是否也将其用于此条目？"
+
+#. Shown when a playlist cannot be given up because a movie version still uses its file
+#: xbmc/dialogs/GUIDialogSimpleMenu.cpp
+msgctxt "#40051"
+msgid "This playlist is still in use by another movie version and could not be reassigned."
+msgstr "此播放列表仍被另一个电影版本使用，无法重新分配。"
+
+#empty strings with id 40052 to 40201
 
 #. Ignore different video versions settting
 #: system/settings/settings.xml
